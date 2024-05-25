@@ -10,13 +10,13 @@ jobs:
   build:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
 
       # Install Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'  # Make sure this matches your Node version
+          node-version: '20'  # Make sure this matches your Node version
 
       # Install dependencies
       - name: Install dependencies
